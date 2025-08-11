@@ -8,7 +8,7 @@ npm run dev
 
 Ссылка на макет [figma](https://www.figma.com/file/YuLYXnZmLk1U5sKAYjQ0Qy/Test?type=design&node-id=0-1&mode=design&t=qUknJKzxfWOznHn0-0)
 
-Ссылка на шрифты в макете не актуальна.
+Ссылка на шрифты в макете не актуальна. Поэтому использован стандартный шрифт.
 
-Ссылкb на картинки в api - битые.
+Ссылки на картинки в api - битые. Поэтому заменены на одну случайную.
 

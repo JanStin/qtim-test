@@ -14,7 +14,7 @@ const { data: article } = await useAsyncData(
         <NuxtImg class="article__img" src="/image/1.jpg" :alt="article?.title" />
         <div class="article__body">
             <p class="article__label">About</p>
-            <div class="article__text" v-html="article?.description"></div>
+            <div class="article__text" v-html="article?.description"/>
         </div>
     </article>
 </template>

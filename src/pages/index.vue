@@ -29,7 +29,8 @@ const totalPages = computed(() => {
         <div v-if="paginatedArticles.length" class="articles__list">
             <ArticleCard v-for="article in paginatedArticles" :key="article.id" :article="article" />
         </div>
-        <Pagination v-if="totalPages > 1" :current-page="currentPage" :total-pages="totalPages"
+        <Pagination
+v-if="totalPages > 1" :current-page="currentPage" :total-pages="totalPages"
             @update:current-page="newPage => currentPage = newPage" />
     </div>
 </template>

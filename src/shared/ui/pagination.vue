@@ -8,30 +8,30 @@ const props = defineProps({
         type: Number,
         required: true
     }
-})
+});
 
-const emit = defineEmits(['update:currentPage'])
+const emit = defineEmits(['update:currentPage']);
 
 const visiblePages = computed(() => {
-    const pages = []
-    const maxVisible = 5
-    let start = Math.max(1, props.currentPage - Math.floor(maxVisible / 2))
-    const end = Math.min(props.totalPages, start + maxVisible - 1)
+    const pages = [];
+    const maxVisible = 5;
+    let start = Math.max(1, props.currentPage - Math.floor(maxVisible / 2));
+    const end = Math.min(props.totalPages, start + maxVisible - 1);
 
     if (end - start + 1 < maxVisible) {
-        start = Math.max(1, end - maxVisible + 1)
+        start = Math.max(1, end - maxVisible + 1);
     }
 
     for (let i = start; i <= end; i++) {
-        pages.push(i)
+        pages.push(i);
     }
 
-    return pages
-})
+    return pages;
+});
 
 const setPage = (page: number) => {
     if (page >= 1 && page <= props.totalPages) {
-        emit('update:currentPage', page)
+        emit('update:currentPage', page);
     }
 }
 </script>
